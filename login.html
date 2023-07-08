@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="login.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+  <script>
+
+    function validate(){
+      var email=document.login_form.email;
+      var pass=document.login_form.pass;
+
+      console.log(document.login_form.email.value);
+      console.log(document.login_form.pass.value);
+
+      if(email.value.length <=0 ){
+        alert("Email is requied");
+        email.focus();
+        return false;
+      }
+
+      if(pass.value.length <=0 ){
+        alert("Password is required")
+        pass.focus();
+        return false;
+      }
+      return false;
+      
+    }
+  </script>
+
+</head>
+<body>
+<div class="login" id="login">
+
+   <div class="label">
+      <i class="fas fa-dumbbell"></i>
+      <label class="logo">APEX FITNESS</label>
+    </div>
+
+    <form method="" action="" name="login_form" onsubmit="return validate()">
+    <h2>Log In</h2>
+
+    <label for="email">Email</label>
+    <input type="email" name="email" placeholder="Enter Your Email">
+
+    <label for="password">Password</label>
+    <input type="password" name="pass" placeholder="Enter Your Password">
+
+    <div class="sub">
+      <input type="submit" value="Log In">
+    </div>  
+ 
+    <div class="close-btn">&times;</div>
+  </form>
+     <div class="rem">
+      Remember Me <input type="checkbox" name="">
+    </div>
+    
+    <div class="form-element">
+      <a href="#">Forgot Password</a>
+    </div>
+    <div class="element2">  
+      <a href="#">Don't Have an Acoount?<span><a href="register.html">Register Here</span></a>
+    </div>
+</div>
+    
+</body>
+</html>
+
+
+

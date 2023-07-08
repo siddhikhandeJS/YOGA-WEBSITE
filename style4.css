@@ -1,0 +1,17 @@
+.heading{
+	display: inline-block;
+	color: #333;
+	margin: 2rem 0;
+	padding: 1eem 0;
+	font-size: 3rem;
+	padding-top: 8rem;
+	font-size: 3rem;
+	border-bottom: .2rem solid var(--orange);
+}
+.heading h1{
+	border-bottom: .2rem solid var(--orange);
+}
+.service{
+	text-align: center;
+
+}

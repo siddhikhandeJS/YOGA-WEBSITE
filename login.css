@@ -1,0 +1,119 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	background: url('img/i41.jpeg');
+	z-index: -1;
+	background-size: cover;
+
+}
+.login{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 380px;
+	padding: 20px 30px;
+	background: #fff;
+	box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+
+
+}
+.close-btn{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 15px;
+	height: 15px;
+	background: #888;
+	color: #eee;
+	text-align: center;
+	line-height: 15px;
+	border-radius: 15px;
+	cursor: pointer;
+}
+.close-btn:hover{
+	transform: rotate(45deg);
+}
+.label{
+	color: black;
+    font-family: monsterrat;
+    font-size: 25px;
+    line-height: 41px;
+    margin-left: 20px;
+    padding: inherit;
+    font-weight: bold;
+    /*margin-left: 3.7rem;*/
+}
+.label i{
+	color: black;
+}
+form{
+	display: flex;
+	flex-flow: column;
+}
+form h2{
+	text-align: center;
+	color: #222;
+	margin: 5px 0px 10px;
+	font-size: 25px;
+}
+form input{
+	margin-top: 5px;
+	display: block;
+	width: 100%;
+	padding: 10px;
+	outline: none;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	margin: 10px;
+	margin-left: 0px;
+}
+
+form label{
+	font-size: 14px;
+	color: #222;
+}
+.sub input{
+	background-color: black;
+	color: white;
+}
+.rem{
+	font-size: 1rem;
+}
+.form-element a{
+	display: block;
+	text-align: right;
+	font-size: 15px;
+	color: #1a79ca;
+	text-decoration: none;
+	font-weight: 600;
+}
+.form-element a:hover{
+	text-decoration: underline;
+}
+.element2 a{
+	display: block;
+	text-align: left;
+	font-size: 12px;
+	color: #1a79ca;
+	text-decoration: none;
+	font-weight: 600;
+}
+.element2 span{
+	display: block;
+	text-align: left;
+	font-size: 12px;
+	color: #1a79ca;
+	text-decoration: none;
+	font-weight: 600;
+	text-decoration: underline;
+}
+.element2 span:hover{
+	color: #222;
+}
+

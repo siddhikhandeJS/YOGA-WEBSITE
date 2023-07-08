@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Navbar</title>
+</head>
+<style>
+body{
+  margin: 0px;  
+}
+  .navbar{
+    background-color: black;
+    margin-top: 0px;
+    overflow: hidden;
+    padding: 0px;
+    line-height: 10px;
+  }
+  /*.navbar ul{
+    overflow: auto;
+  }*/
+  .navbar li{
+    float: right;
+    list-style: none;
+    margin: 7px;
+    font-size: 15px;
+  }
+  .navbar li a{
+    padding: 5px 4px;
+    text-decoration: none;
+    color: white;
+    border-radius: 7px;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  .navbar li a.active,a:hover{
+    background-color: #b9adad;
+  }
+  .search{
+    float: right;
+    color: white;
+    padding: 0px 10px;
+  }
+  .navbar input{
+    border=2px solid black;
+    border-radius: 7px;
+    padding: 4px 4px;
+    width: 129px;
+  }
+  .logo{
+    color: white;
+    margin-left: 50px;
+    font-family: monsterrat;
+    font-size: 30px;
+    line-height: 41px;
+  }    
+
+
+</style>
+<body>
+    <nav class="navbar">
+      
+      <ul>
+        <div class="search">
+          <input type="text" name="search" id="search" placeholder="       Search Here">
+        </div>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Our Clients</a></li>
+        <li><a href="#">Our Projects</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a class="active" href="#">Home</a></li>
+        
+        </div>
+      </ul>
+      <label class="logo">APEX FITNESS</label>
+    </nav>
+</body>
+</html>

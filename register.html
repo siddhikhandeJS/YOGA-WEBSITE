@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registere Form</title>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" type="text/css" href="register.css">
+
+	<script>
+		function validate(){
+      		var fname=document.reg_form.fname;
+      		var remail=document.reg_form.remail;
+      		var pass=document.reg_form.pass;
+      		var pass=document.reg_form.cpass;
+
+      		console.log(document.reg_form.fname.value);
+      		console.log(document.reg_form.remail.value);
+      		console.log(document.reg_form.pass.value);
+      		console.log(document.reg_form.cpass.value);
+		
+			if(fname.value.length <=0 ){
+        		alert("Name is requied");
+        		fname.focus();
+        		return false;
+      		}
+      		if(remail.value.length <=0 ){
+      			alert("Email is requied");
+      			remail.focus();
+      			return false;
+      		}
+      		if(pass.value.length <= 0 ){
+      			alert("Password is required");
+      			pass.focus();
+      			return false;
+      		}
+      		if(cpass.value.length <=0 ){
+      			alert("Password confirmation is required");
+      			cpass.focus();
+      			return false;
+      		}
+      		return false;
+      	}
+
+	</script>
+
+
+</head>
+<body>
+	<div class="register" id="register">
+		<div class="label">
+      		<i class="fas fa-dumbbell"></i>
+      		<label class="logo">APEX FITNESS</label>
+    	</div>
+
+    	<form method="" action="" name="reg_form" onsubmit="return validate()">
+    		<h2>Register Here</h2>
+    		<label for="name">Full Name</label>
+    		<input type="text" name="fname" placeholder="Enter Your Full Name">
+
+    		<label for="email">Enter Your Email</label>
+    		<input type="email" name="remail" placeholder="Enter Your Email">
+
+    		<label for="password">Password</label>
+    		<input type="password" name="pass" placeholder="Enter Your Password">
+
+    		<label for="password">Confirm Password</label>
+    		<input type="password" name="cpass" placeholder="Confirm Your Password">
+
+    		<div class="sub">
+    		<input type="submit" name="" value="Register">
+    		</div>
+
+    	</form>
+		
+    	<div class="element2">  
+      	<a href="#">Already Have an Acoount?<span><a href="login.html">Login Here</a></span></a>
+    	</div>
+
+	</div>
+</body>
+</html>
